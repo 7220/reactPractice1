@@ -16,7 +16,6 @@ export default function NavLinks() {
       </li>
       <li>
         <NavLink to="/about" activeStyle={activeStyle} isActive={(match, location) => {
-          console.log(match, location);
           return match !== null && location.search === "";
         }}>About</NavLink>
       </li>
